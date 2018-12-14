@@ -20,7 +20,9 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "hotr": "concurrently \"webpack --config webpack.config.js \" \"npm run start\"",
     "webpack": "webpack --config webpack.config.js",
-    "start:dist": "node dist/server"
+    "start:dist": "node dist/server",
+    "start:react": "cd public/react && npm start",
+    "start:concurrent": "concurrently \"npm start\" \"cd client/react && npm start\" "
   },
   "dependencies": {
     "@nestjs/common": "^5.4.0",

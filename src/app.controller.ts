@@ -7,6 +7,6 @@ export class AppController {
 
   @Get()
   index(@Res() res) {
-    res.sendFile(path.resolve(__dirname,'../../../../','public/index.html'))
+    res.sendFile(path.resolve(__dirname, '../') + '/public/react/build/index.html');
   }
 }
